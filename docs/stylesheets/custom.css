@@ -1,1 +1,425 @@
+/* ================================
+   GLOBAL DESIGN
+================================ */
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #243447;
+    line-height: 1.7;
+}
+
+/* Remove unnecessary Read the Docs spacing */
+.wy-nav-content-wrap {
+    background: #f5f8fc;
+}
+
+.wy-nav-content {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 50px 60px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+/* ================================
+   TOP NAVIGATION
+================================ */
+
+.wy-nav-top {
+    background: #123b63;
+}
+
+.wy-nav-top a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hide left sidebar */
+.wy-nav-side {
+    display: none;
+}
+
+.wy-nav-content-wrap {
+    margin-left: 0;
+}
+
+
+/* ================================
+   HERO BANNER
+================================ */
+
+.hero-banner {
+    min-height: 360px;
+    padding: 55px 45px;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    background:
+        linear-gradient(135deg, rgba(9, 48, 83, 0.96), rgba(24, 83, 128, 0.88)),
+        url("../images/carecredit-banner.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+.hero-content p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0 auto 25px;
+}
+
+
+/* ================================
+   ACTIVATE NOW BUTTON
+================================ */
+
+.activate-button {
+    display: inline-block;
+    background: #ffd43b;
+    color: #142b3d !important;
+    padding: 13px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none !important;
+    border: 2px solid #ffd43b;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activate-button:hover {
+    background: #ffffff;
+    color: #123b63 !important;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ================================
+   MAIN TITLE
+================================ */
+
+.wy-nav-content h1 {
+    color: #123b63;
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   H2 SECTIONS
+================================ */
+
+.wy-nav-content h2 {
+    color: #123b63;
+    font-size: 28px;
+    line-height: 1.35;
+    font-weight: 700;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e7edf4;
+}
+
+.wy-nav-content h3 {
+    color: #244f73;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   PARAGRAPHS
+================================ */
+
+.wy-nav-content p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    color: #3b4b5c;
+}
+
+
+/* ================================
+   LISTS
+================================ */
+
+.wy-nav-content ul,
+.wy-nav-content ol {
+    margin: 15px 0 25px 20px;
+    padding-left: 20px;
+}
+
+.wy-nav-content li {
+    margin-bottom: 9px;
+    line-height: 1.65;
+}
+
+.wy-nav-content ul li::marker {
+    color: #123b63;
+}
+
+
+/* ================================
+   INFORMATION BOX
+================================ */
+
+.info-box {
+    background: #f2f7fb;
+    border-left: 5px solid #123b63;
+    padding: 18px 22px;
+    margin: 25px 0;
+    border-radius: 6px;
+}
+
+
+/* ================================
+   FAQ BOXES
+================================ */
+
+.faq-box {
+    background: #ffffff;
+    border: 1px solid #dce5ee;
+    border-radius: 9px;
+    padding: 20px 23px;
+    margin: 16px 0;
+    box-shadow: 0 3px 12px rgba(25, 55, 85, 0.07);
+}
+
+.faq-box h3 {
+    color: #123b63;
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-size: 19px;
+}
+
+.faq-box p {
+    margin-bottom: 0;
+    color: #4a5968;
+}
+
+
+/* ================================
+   STEP BOXES
+================================ */
+
+.step-box {
+    background: #f8fafc;
+    border: 1px solid #e1e8ef;
+    border-radius: 8px;
+    padding: 20px 23px;
+    margin: 20px 0;
+}
+
+.step-box h3 {
+    margin-top: 0;
+    color: #123b63;
+}
+
+
+/* ================================
+   SECURITY NOTICE
+================================ */
+
+.security-box {
+    background: #fff9e6;
+    border-left: 5px solid #e2b400;
+    padding: 18px 22px;
+    margin: 25px 0;
+    border-radius: 6px;
+}
+
+.security-box strong {
+    color: #765d00;
+}
+
+
+/* ================================
+   LINKS
+================================ */
+
+.wy-nav-content a {
+    color: #145b8c;
+    font-weight: 600;
+}
+
+.wy-nav-content a:hover {
+    color: #0b3d61;
+}
+
+
+/* ================================
+   TABLES
+================================ */
+
+.wy-nav-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.wy-nav-content th {
+    background: #123b63;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+.wy-nav-content td {
+    padding: 12px;
+    border: 1px solid #dce5ee;
+}
+
+.wy-nav-content tr:nth-child(even) {
+    background: #f7f9fb;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #dce5ee;
+    color: #718096;
+    text-align: center;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media screen and (max-width: 768px) {
+
+    .wy-nav-content {
+        padding: 20px 18px 40px;
+    }
+
+    .hero-banner {
+        min-height: 300px;
+        padding: 40px 22px;
+        border-radius: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .activate-button {
+        padding: 12px 23px;
+        font-size: 15px;
+    }
+
+    .wy-nav-content h1 {
+        font-size: 30px;
+    }
+
+    .wy-nav-content h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .wy-nav-content h3 {
+        font-size: 19px;
+    }
+
+    .wy-nav-content p {
+        font-size: 15px;
+    }
+
+    .faq-box {
+        padding: 17px 18px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media screen and (max-width: 480px) {
+
+    .wy-nav-content {
+        padding: 15px 13px 35px;
+    }
+
+    .hero-banner {
+        min-height: 280px;
+        padding: 35px 17px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .activate-button {
+        width: auto;
+        padding: 11px 20px;
+    }
+
+    .wy-nav-content h1 {
+        font-size: 27px;
+    }
+
+    .wy-nav-content h2 {
+        font-size: 22px;
+    }
+}
+
+.activate-button {
+    display: inline-block;
+    background: #ffd43b;
+    color: #142b3d !important;
+    padding: 11px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    border: 2px solid #ffd43b;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: all 0.2s ease;
+}
+
+.activate-button:hover {
+    background: #ffffff;
+    color: #123b63 !important;
+    border-color: #123b63;
+}
