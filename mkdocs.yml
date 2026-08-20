@@ -1,1 +1,10 @@
+site_name: CareCredit.com/Mastercard – Activate Your CareCredit Mastercard
 
+theme:
+  name: readthedocs
+
+extra_css:
+  - stylesheets/custom.css
+
+nav:
+  - Home: index.md
